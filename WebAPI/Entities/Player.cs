@@ -10,10 +10,11 @@ namespace WebAPI.Entities
     {
         public string Id { get; set; } = string.Empty;
         public string Name { get; set; } = string.Empty;
-        public Club Club { get; set; }
+        public int Trophies { get; set; }
+        public virtual Club Club { get; set; }
         public string ClubId { get; set; } = string.Empty;
-        public ICollection<TrophyRegister> Registers { get; set; } = [];
-        public ICollection<InOutRegister> InOuts { get; set; } = [];
+        public virtual ICollection<TrophyRegister> Registers { get; set; } = [];
+        public virtual ICollection<InOutRegister> InOuts { get; set; } = [];
 
     }
 }

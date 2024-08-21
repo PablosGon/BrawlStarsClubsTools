@@ -7,7 +7,7 @@ namespace WebAPI.Entities
         public DbSet<Player> Members { get; set; }
         public DbSet<TrophyRegister> TrophyRegister { get; set; }
         public DbSet<Club> Clubs { get; set; }
-        public DbSet<InOutRegister> InoutRegister { get; set; }
+        public DbSet<InOutRegister> InOutRegisters { get; set; }
         public DbSet<ClubFamily> ClubFamilies { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
